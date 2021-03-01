@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.TiLab.PrimaryController">
+ <children>
+      <Button id="decode" fx:id="decode" layoutX="410.0" layoutY="495.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="121.0" text="Расшифровать" />
+      <RadioButton layoutX="53.0" layoutY="22.0" mnemonicParsing="false" text="Изгородь">
+         <toggleGroup>
+            <ToggleGroup fx:id="SV" />
+         </toggleGroup></RadioButton>
+      <RadioButton layoutX="229.0" layoutY="22.0" mnemonicParsing="false" text="Столбцовый" toggleGroup="$SV" />
+      <RadioButton layoutX="440.0" layoutY="22.0" mnemonicParsing="false" text="Решетки" toggleGroup="$SV" />
+      <RadioButton layoutX="651.0" layoutY="22.0" mnemonicParsing="false" text="Вижнера" toggleGroup="$SV" />
+      <TextField id="text" fx:id="text" layoutX="29.0" layoutY="124.0" prefHeight="51.0" prefWidth="742.0" promptText="Текст для шифрования/дешифрования">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Label alignment="CENTER" layoutX="29.0" layoutY="74.0" prefHeight="32.0" prefWidth="742.0" text="Исходный текст">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField id="result" fx:id="result" editable="false" layoutX="29.0" layoutY="403.0" prefHeight="51.0" prefWidth="742.0" promptText="Результат">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="encode" layoutX="263.0" layoutY="495.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="121.0" text="Зашифровать" />
+      <TextField id="key" fx:id="key" layoutX="29.0" layoutY="262.0" prefHeight="51.0" prefWidth="742.0" promptText="Введите сюда ключ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" layoutX="29.0" layoutY="213.0" prefHeight="18.0" prefWidth="742.0" text="Ключ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="29.0" layoutY="359.0" prefHeight="18.0" prefWidth="742.0" text="Результат выполнения">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Separator layoutX="1.0" layoutY="65.0" prefHeight="0.0" prefWidth="800.0" />
+   </children>
+</Pane>
