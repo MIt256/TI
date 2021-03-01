@@ -12,5 +12,5 @@
    
    *Java version 15.0.2 / JavaFX v.15
      
- ## [Метода](file:///C:/Users/maks/Downloads/Telegram%20Desktop/2010%20КиОКИ%20Практикум.pdf)
+ ## ![Метода](file:///C:/Users/maks/Downloads/Telegram%20Desktop/2010%20КиОКИ%20Практикум.pdf)
 
