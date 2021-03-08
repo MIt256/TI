@@ -12,13 +12,13 @@
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.TiLab.PrimaryController">
  <children>
       <Button id="decode" fx:id="decode" layoutX="410.0" layoutY="495.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="121.0" text="Расшифровать" />
-      <RadioButton layoutX="53.0" layoutY="22.0" mnemonicParsing="false" text="Изгородь">
+      <RadioButton fx:id="buttrail" layoutX="53.0" layoutY="22.0" mnemonicParsing="false" text="Изгородь">
          <toggleGroup>
             <ToggleGroup fx:id="SV" />
          </toggleGroup></RadioButton>
-      <RadioButton layoutX="229.0" layoutY="22.0" mnemonicParsing="false" text="Столбцовый" toggleGroup="$SV" />
-      <RadioButton layoutX="440.0" layoutY="22.0" mnemonicParsing="false" text="Решетки" toggleGroup="$SV" />
-      <RadioButton layoutX="651.0" layoutY="22.0" mnemonicParsing="false" text="Вижнера" toggleGroup="$SV" />
+      <RadioButton fx:id="buttcol" layoutX="229.0" layoutY="22.0" mnemonicParsing="false" text="Столбцовый" toggleGroup="$SV" />
+      <RadioButton fx:id="buttgrid" layoutX="440.0" layoutY="22.0" mnemonicParsing="false" text="Решетки" toggleGroup="$SV" />
+      <RadioButton fx:id="buttvig" layoutX="651.0" layoutY="22.0" mnemonicParsing="false" text="Вижнера" toggleGroup="$SV" />
       <TextField id="text" fx:id="text" layoutX="29.0" layoutY="124.0" prefHeight="51.0" prefWidth="742.0" promptText="Текст для шифрования/дешифрования">
          <font>
             <Font size="18.0" />
