@@ -25,6 +25,8 @@ public class GridMethod {
 }
 
     public String encode(String stext,String skey) {
+        //deleting this facking spases
+        stext = stext.replaceAll(" ","");
         char[] result = new char[stext.length()+10];
 
         char[] string = stext.toCharArray();

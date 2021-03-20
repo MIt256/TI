@@ -6,6 +6,8 @@ public class VigenerMethod {
         while (skey.length()<stext.length()){
             skey+=skey;
         }
+        //deleting this facking spases
+        stext = stext.replaceAll(" ","");
 
         char[] key = skey.toCharArray();
         char[] text = stext.toCharArray();
